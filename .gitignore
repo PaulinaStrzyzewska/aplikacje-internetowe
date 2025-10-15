@@ -1,0 +1,22 @@
+# Foldery konfiguracyjne IDE
+.vscode/
+.idea/
+
+# Pliki tymczasowe systemu
+*.log
+*.tmp
+*.bak
+
+# Pliki systemowe
+.DS_Store
+Thumbs.db
+
+# Node.js / npm (jeśli używasz)
+node_modules/
+
+# Build / dystrybucje (jeśli istnieją)
+dist/
+build/
+
+# Inne tymczasowe pliki
+*.swp
