@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista zadań</title>
+    <link rel="stylesheet" href="style_to_do_list.css">
+</head>
+<body>
+    <div class="todo-container">
+        <div class="search-bar">
+        <input type="text" id="search" placeholder="🔍">
+        </div>
+
+        <ul id="task-list">
+            <li>
+                <span class="task-name">Zrobić zakupy</span>
+                <span class="task-date">2025-10-23</span>
+                <button class="delete-btn">🗑️</button>
+            </li>
+            <li>
+                <span class="task-name">Odebrać paczkę</span>
+                <span class="task-date">2025-10-25</span>
+                <button class="delete-btn">🗑️</button>
+            </li>
+            <li>
+                <span class="task-name">Zrobić pranie</span>
+                <span class="task-date">2025-10-25</span>
+                <button class="delete-btn">🗑️</button>
+            </li>
+        </ul>
+
+        <div class="add-task">
+        <input type="text" id="new-task" placeholder="do zrobienia...">
+        <input type="date" id="new-date">
+        <button id="add-btn">Zapisz</button>
+        </div>
+    </div>
+
+    <script src="script_to_do_list.js"></script>
+</body>
+</html>
