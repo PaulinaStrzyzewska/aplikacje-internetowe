@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Puzzle z mapą</title>
+    
+    <link rel="stylesheet" href="leaflet/leaflet.css" />
+    <script src="leaflet/leaflet-src.js"></script>
+    <script src="leaflet/leaflet-providers.js"></script>
+    <script src="leaflet/leaflet-image.js"></script>
+
+    <link rel="stylesheet" href="style_puzzle.css">
+</head>
+<body>
+    <header>
+        <h1>Puzzle - Mapa</h1>
+    </header>
+    
+    <main class="layout">
+        <section class="map-panel">
+            <div id="map-controls">
+            
+            <button id="btn-my-loc">Moja lokalizacja</button>
+
+            <button id="btn-request-notif">Zezwól na powiadomienia</button>
+
+            <button id="btn-download-map">Pobierz mapę</button>
+
+             <div id="coords">Współrzędne: <span id=coords-text>-</span></div>
+            </div>
+
+            <div id="map" aria-label="Mapa dynamiczna"></div>
+        </section>
+
+        <section class="puzzle-board-panel">
+            <h2>Ułóż puzzle</h2>
+            <div id="board" class ="board"></div>
+            <div id="status">Status: <span id="status-text">Puzzle są jeszcze nieułożone :(</span></div>
+        </section>
+     </main>
+
+    <section class="puzzle-table-panel">
+        <h2>Puzzle do ułożenia</h2>
+        <div id="table" class="table"></div>
+    </section>
+    
+    <script src="html2canvas.min.js"></script>
+    <script src="script_puzzle.js"></script>
+</body>
+</html>
