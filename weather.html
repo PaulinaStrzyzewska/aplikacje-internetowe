@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    
+    <link rel="stylesheet" href="weather_style.css" type="text/css">
+</head>
+<body>
+
+    <div id="weather-search">
+        <h1>Hot&Cold - Weather Forecast</h1>
+        <input type="text" value="Szczecin, Polska" id="locationInput">
+        <button id="checkButton">Check!</button>
+    </div>
+
+    <div id="weather-results-container">
+
+        <div id="current-weather" class="weather-current">
+            <div class="weather-date"></div>
+            <div class="weather-temperature"></div>
+            <div class="weather-temperature-feels-like"></div>
+            <img class="weather-icon" src="" alt="ikona pogody">
+            <div class="weather-description"></div>
+        </div>
+
+        <div id="forecast-container"></div>
+        
+    </div>
+    
+    <script src="weather_script.js"></script>
+</body>
+</html>
